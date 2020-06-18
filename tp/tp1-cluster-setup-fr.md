@@ -97,7 +97,7 @@ K8S_VERSION=$(kubectl version | base64 | tr -d '\n')
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=${K8S_VERSION}"
 ```
 
-- Vérifiez que les pods sont maintenant `Ready` :
+- Vérifiez que les nodes sont maintenant `Ready` :
 
 ```shell
 kubectl get nodes -w
